@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Hot Beans Web</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific overrides for a "High Budget" feel */
+        .content {
+            background: radial-gradient(circle at center, #0a192f 0%, #000 100%);
+        }
+
+        .success-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .thank-you-title {
+            font-size: 3em;
+            background: linear-gradient(to right, #4a90e2, #1a4a8e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #1a4a8e, transparent);
+            margin: 40px 0;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .course-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            border-color: #4a90e2;
+            background: rgba(74, 144, 226, 0.1);
+        }
+
+        .course-card h4 {
+            margin-top: 0;
+            color: #4a90e2;
+        }
+
+        .course-card p {
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #4a90e2;
+            text-decoration: none;
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+
+        .back-link:hover { opacity: 1; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-area">
+                <div class="logo-text">Hot Beans Web</div>
+                <img src="Black Coffee Beans Circle Sticker (1).png" alt="Logo" class="logo-img">
+            </div>
+            <nav class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="listings.html">Listings</a>
+                <a href="courses.html">Courses</a>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="success-card">
+                <h1 class="thank-you-title">Do you wish to improve your skills?</h1>
+                <p style="font-size: 1.2em;">You can do so by visiting <strong>some of the best websites</strong> for learning to be a veteran developer!</p>
+                <p>Most of what we offer require a lot of what is listed below!</p>
+                
+                <div class="divider"></div>
+                
+                <h3>Level Up Your Skills</h3>
+                <p>While you wait, explore these industry-leading resources:</p>
+                
+                <div class="course-grid">
+                    <div class="course-card">
+                        <div>
+                            <h4>freeCodeCamp</h4>
+                            <p>Responsive Web Design Certification.</p>
+                        </div>
+                        <a href="https://www.freecodecamp.org/" target="_blank" class="btn">View Course</a>
+                    </div>
+
+                    <div class="course-card">
+                        <div>
+                            <h4>MDN Docs</h4>
+                            <p>The structured learning path for JS and Web APIs.</p>
+                        </div>
+                        <a href="https://developer.mozilla.org/" target="_blank" class="btn">View Course</a>
+                    </div>
+
+                    <div class="course-card">
+                        <div>
+                            <h4>Harvard CS50W</h4>
+                            <p>Advanced Web Programming with Python & JS.</p>
+                        </div>
+                        <a href="https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript" target="_blank" class="btn">View Course</a>
+                    </div>
+                </div>
+
+                <a href="index.html" class="back-link">← Return to Home</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
