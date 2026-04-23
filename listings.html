@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings - Hot Beans Web</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* High-Budget Listings Overrides */
+        .content {
+            background: radial-gradient(circle at center, #0a192f 0%, #000 100%);
+            padding: 50px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            background: linear-gradient(to right, #ffffff, #4a90e2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 40px;
+            font-weight: 800;
+        }
+
+        /* Glassmorphism Job Cards */
+        .job-row { 
+            display: flex; 
+            gap: 30px; 
+            padding: 30px; 
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(74, 144, 226, 0.1);
+            border-radius: 20px;
+            margin-bottom: 25px;
+            align-items: center; 
+            width: 100%;
+            max-width: 950px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .job-row:hover {
+            transform: scale(1.02);
+            background: rgba(255, 255, 255, 0.07);
+            border-color: #4a90e2;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(74, 144, 226, 0.2);
+        }
+
+        .job-img { 
+            width: 200px; 
+            height: 125px; 
+            background-color: #111;
+            border-radius: 12px; 
+            flex-shrink: 0; 
+            border: 1px solid rgba(74, 144, 226, 0.3);
+            box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+        }
+
+        .job-desc { flex: 1; }
+        
+        h3 { 
+            color: #4a90e2; 
+            margin: 0 0 10px 0; 
+            font-size: 1.5em; 
+            letter-spacing: 0.5px;
+        }
+        
+        .job-desc p {
+            font-size: 0.95em; 
+            color: #bbb; 
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Modern Action Button */
+        .btn { 
+            background: rgba(74, 144, 226, 0.1);
+            color: #4a90e2; 
+            border: 1px solid #4a90e2;
+            text-decoration: none; 
+            padding: 12px 24px; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .btn:hover { 
+            background: #4a90e2; 
+            color: white;
+            box-shadow: 0 0 20px rgba(74, 144, 226, 0.4);
+        }
+
+        /* Responsive stack for tablets/phones */
+        @media (max-width: 768px) {
+            .job-row { flex-direction: column; text-align: center; padding: 40px 20px; }
+            .job-img { width: 100%; height: 180px; }
+            .btn { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-area">
+                <div class="logo-text">Hot Beans Web</div>
+                <img src="Black Coffee Beans Circle Sticker (1).png" alt="Logo" class="logo-img">
+            </div>
+            <nav class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="listings.html">Listings</a>
+                <a href="courses.html">Courses</a>
+            </nav>
+        </header>
+
+        <div class="content">
+            <h2>Available Positions</h2>
+            
+            <div class="job-row">
+                <div class="job-img" style="background-image: url('job1.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="job-desc">
+                    <h3>Full Stack Developer</h3>
+                    <p>Master the entire lifecycle. From architecting scalable server-side logic to crafting pixel-perfect user interfaces, you'll be at the heart of our digital evolution.</p>
+                </div>
+                <a href="job-detail.html" class="btn">View Details</a>
+            </div>
+
+            <div class="job-row">
+                <div class="job-img" style="background-image: url('frontenddev.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="job-desc">
+                    <h3>Front End Developer</h3>
+                    <p>Shape the user experience. Utilize modern frameworks like React or Vue to build high-performance, responsive applications that delight our global users.</p>
+                </div>
+                <a href="job-detail2.html" class="btn">View Details</a>
+            </div>
+
+            <div class="job-row">
+                <div class="job-img" style="background-image: url('backend.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="job-desc">
+                    <h3>Back End Developer</h3>
+                    <p>Architect the engine. Design robust APIs, optimize database performance, and ensure the security and reliability of our core infrastructure.</p>
+                </div>
+                <a href="job-detail3.html" class="btn">View Details</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
