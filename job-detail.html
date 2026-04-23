@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Detail - Hot Beans Web</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* High-Budget Detail Overrides */
+        .content {
+            background: radial-gradient(circle at center, #0a192f 0%, #000 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .job-detail-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            border-radius: 24px;
+            padding: 50px;
+            max-width: 850px;
+            width: 100%;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: #4a90e2;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: transform 0.2s ease;
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+            color: #fff;
+        }
+
+        .header-info {
+            font-size: 2.8em;
+            background: linear-gradient(to right, #ffffff, #4a90e2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            font-weight: 800;
+        }
+
+        .location { 
+            color: #4a90e2; 
+            font-size: 1.1em; 
+            margin: 10px 0;
+            font-weight: 500;
+        }
+
+        .salary { 
+            background: rgba(74, 144, 226, 0.1);
+            border: 1px solid rgba(74, 144, 226, 0.3);
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: bold; 
+            color: #fff; 
+            font-size: 0.95em; 
+            margin-bottom: 40px; 
+        }
+
+        section { 
+            margin-bottom: 30px; 
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 15px;
+            border-left: 4px solid #1a4a8e;
+        }
+
+        h4 { 
+            margin-top: 0;
+            margin-bottom: 15px; 
+            color: #4a90e2; 
+            font-size: 1.3em; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        ul { 
+            padding-left: 20px; 
+            margin: 0;
+        }
+
+        li { 
+            margin-bottom: 12px; 
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        /* High-Budget Apply Button */
+        .actions {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn-apply { 
+            background: linear-gradient(135deg, #1a4a8e 0%, #4a90e2 100%);
+            color: white; 
+            padding: 18px 60px; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-weight: bold;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 20px rgba(26, 74, 142, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-apply:hover { 
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(74, 144, 226, 0.5);
+        }
+
+        @media (max-width: 600px) {
+            .job-detail-card { padding: 30px 20px; }
+            .header-info { font-size: 2em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-area">
+                <div class="logo-text">Hot Beans Web</div>
+                <img src="Black Coffee Beans Circle Sticker (1).png" alt="Logo" class="logo-img">
+            </div>
+            <nav class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="listings.html">Listings</a>
+                <a href="courses.html">Courses</a>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="job-detail-card">
+                <a href="listings.html" class="back-link">← Back to Job Listings</a>
+
+                <h2 class="header-info">Full Stack Developer</h2>
+                <p class="location">Hot Beans Web • London (Remote)</p>
+                <div class="salary">£38,000 - £42,000 • Permanent • Full-time</div>
+                
+                <section>
+                    <h4>Responsibilities</h4>
+                    <ul>
+                        <li>Collaborate with cross-functional teams to design innovative web features.</li>
+                        <li>Deliver high-quality code across the entire stack (Front-end & Back-end).</li>
+                        <li>Participate in agile ceremonies and peer code reviews to maintain excellence.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>Technical Profile</h4>
+                    <ul>
+                        <li>Proven experience in Full Stack development within a professional environment.</li>
+                        <li>Modern proficiency in HTML5, CSS3, JavaScript (ES6+), and Node.js.</li>
+                        <li>Experience working with relational databases and RESTful API architecture.</li>
+                    </ul>
+                </section>
+
+                <div class="actions">
+                    <a href="apply.html" class="btn-apply">Begin Application</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
